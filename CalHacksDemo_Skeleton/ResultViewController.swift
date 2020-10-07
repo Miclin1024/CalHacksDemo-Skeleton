@@ -20,15 +20,6 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presentNamesLabel.font = UIFont.systemFont(ofSize: 22)
-        presentNamesLabel.text = namePresent.joined(separator: ", ")
-        
-        absentNamesLabel.font = UIFont.systemFont(ofSize: 22)
-        absentNamesLabel.text = nameAbsent.joined(separator: ", ")
-        
-        resetButton.setTitle("Reset", for: .normal)
-        resetButton.setTitleColor(.white, for: .normal)
-        resetButton.titleLabel?.font = UIFont.systemFont(ofSize: 22, weight: .semibold)
     }
     
     @IBAction func resetCallback(_ sender: Any) {
